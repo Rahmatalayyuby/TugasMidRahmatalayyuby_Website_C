@@ -1,0 +1,102 @@
+/* Login Section */
+#login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    padding: 3em 0;
+}
+
+.login-container {
+    background-color: white;
+    padding: 2em;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 1.8em;
+    color: #4CAF50;
+    margin-bottom: 1em;
+}
+
+/* Form Styling for Login */
+.login-container form .form-group {
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.login-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #555;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.login-container input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Login Button Styling */
+.login-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #45A049;
+    transform: scale(1.02);
+}
+
+/* Link to Register */
+.login-container p {
+    margin-top: 1em;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.login-container a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+footer {
+    background-color: #2E7D32;
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0.5em;
+}

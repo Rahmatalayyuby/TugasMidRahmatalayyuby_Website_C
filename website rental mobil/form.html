@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata Customer</title>
+    <link rel="stylesheet" href="/css/css2.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <a href="halamanlogin.html" class="logo">RentalMobilRAHMAT</a>
+
+            <!-- Navbar -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="landingPage.html">Beranda</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#cars">Mobil</a></li><li><a href="#contact">Kontak</a></li>
+                    <li><a href="form.html">Sewa</a></li>
+                    
+                </ul>
+            </header>
+    <section id="form-section"><h1>Silahkan isi biodata dan sewa sekarang</h1>
+        <form action="submit.html" method="post">
+            <div class="form-group">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name" placeholder="Nama Lengkap Anda" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email Anda" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">No. Telepon:</label>
+                <input type="tel" id="phone" name="phone" placeholder="No. Telepon Anda" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Alamat:</label>
+                <textarea id="address" name="address" placeholder="Alamat Lengkap Anda" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="car-selection">Pilih Mobil:</label>
+                <select id="car-selection" name="car-selection" required>
+                    <option value="" disabled selected>Pilih Mobil yang Diinginkan</option>
+                    <option value="Mobil A">Mobil A - Rp500.000/hari</option>
+                    <option value="Mobil B">Mobil B - Rp600.000/hari</option>
+                    <option value="Mobil C">Mobil C - Rp800.000/hari</option><option value="Mobil D">Mobil D - Rp1.000.000/hari</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="rental-duration">Durasi Sewa (Hari):</label>
+                <input type="number" id="rental-duration" name="rental-duration" min="1"
+                    placeholder="Masukkan jumlah hari" required>
+            </div>
+
+
+        </form> <a href="landingPage.html"><button type="submit" class="rent-button">Sewa sekarang</button></a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Rental Mobil RAHMAT | oleh RAHMAT Team</p>
+    </footer>
+</body>
+
+</html>

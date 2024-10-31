@@ -1,0 +1,220 @@
+/* Font dan Gaya Umum */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #e6fae8;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(45deg, #2E7D32, #4CAF50);
+    padding: 1em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #66BB6A;
+}
+
+
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #45A049;
+    transform: scale(1.05);
+}
+
+nav {
+    
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #66BB6A;
+    color: white;
+}
+
+section {
+    padding: 5em 2em;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+section h2{
+    font-size: 2em;
+}
+
+.service-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.service-list li {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    flex: 1 1 150px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.service-list li:hover {
+    transform: translateY(-5px);
+    background-color: #45A049;
+}
+
+.car {
+    display: inline-block;
+    width: 250px;
+    margin: 1em;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.car img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #f4f4f4;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.car:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.rent-button {
+    background-color: #2E7D32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    cursor: pointer;
+    border-radius: 50px;
+    margin: 10px 0 1em;
+    transition: all 0.3s ease;
+}
+
+.rent-button:hover {
+    background-color: #66BB6A;
+}
+
+footer {
+    background-color: #2E7D32;
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0.5em;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .service-list {
+        flex-direction: column;
+    }
+
+    .car {
+        width: 90%;
+    }
+}
